@@ -1,4 +1,3 @@
-import { Title } from "#build/components";
 
 // konfigurasi pada nuxt
 
@@ -7,6 +6,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Blog App",
+      titleTemplate: "%s - Blog App",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width-device-width, initial-scale=1" },
@@ -21,4 +21,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  // kalau mau dimatiin auto imports nya
+  // components: {
+  //   global: false
+  // }
+
 });
